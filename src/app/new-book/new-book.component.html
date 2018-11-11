@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-xs-12 col-md-8 col-md-offset-2">
+    <div class="form-group">
+      <label for="book-id">New book id</label>
+      <input type="number" class="form-control" name="book-id" id="book-id" aria-describedby="helpId" placeholder=""
+        [(ngModel)]="id">
+      <small id="helpId" class="form-text text-muted"></small>
+
+      <label for="book-title">Title</label>
+      <input type="text" class="form-control" name="book-title" id="book-title" aria-describedby="helpId" placeholder=""
+        [(ngModel)]="title">
+      <small id="helpId" class="form-text text-muted"></small>
+
+      <label for="book-author">Author</label>
+      <input type="text" class="form-control" name="book-author" id="book-author" aria-describedby="helpId" placeholder=""
+        [(ngModel)]="author">
+      <small id="helpId" class="form-text text-muted"></small>
+
+      <label for="book-year">Year</label>
+      <input type="number" class="form-control" name="book-year" id="book-year" aria-describedby="helpId" placeholder=""
+        [(ngModel)]="year">
+      <small id="helpId" class="form-text text-muted"></small>
+
+      <button type="button" class="btn btn-default" (click)="addBook(id, title, author, year)">Add book</button>
+
+    </div>
+  </div>
+</div>
